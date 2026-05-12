@@ -1,0 +1,38 @@
+# Ejemplos predefinidos
+ejemplos = [
+    "Anita lava la tina",
+    "radar",
+    "Python",
+    "Reconocer",
+    "A man a plan a canal Panama",
+    "Hola mundo",
+    "12321",
+    "noon"
+]
+ 
+print("\n📋 Ejemplos automáticos:\n")
+for ejemplo in ejemplos:
+    mostrar_resultado(ejemplo)
+ 
+# ============================================
+#         MODO INTERACTIVO (usuario)
+# ============================================
+ 
+print("\n" + "=" * 50)
+print("  Escribe tus propias palabras para probar")
+print("  (escribe 'salir' para terminar)")
+print("=" * 50 + "\n")
+ 
+while True:
+    entrada = input("Ingresa una palabra o frase: ").strip()
+    
+    if entrada.lower() == "salir":
+        print("\n👋 ¡Hasta luego!")
+        break
+    
+    if not entrada:
+        print("  ⚠️  Por favor, ingresa algo.\n")
+        continue
+    
+    mostrar_resultado(entrada)
+    print()
